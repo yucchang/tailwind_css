@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  get 'bluebottle/index'
-  resources :bluebottles
+  resources :bluebottles, only: [:index] do 
+  end
 end
